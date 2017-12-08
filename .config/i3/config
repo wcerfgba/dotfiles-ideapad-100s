@@ -129,6 +129,8 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #i
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
+exec pasystray
+
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec sh ~/Sync/script/brightness-incr.sh 50 # increase screen brightness
 bindsym XF86MonBrightnessDown exec sh ~/Sync/script/brightness-incr.sh -50 # decrease screen brightness
@@ -162,5 +164,5 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command ~/Sync/script/conky-i3bar.sh
+        status_command ~/script/conky-i3bar.sh
 }

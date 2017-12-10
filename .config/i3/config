@@ -135,6 +135,8 @@ exec pasystray
 bindsym XF86MonBrightnessUp exec sh ~/Sync/script/brightness-incr.sh 50 # increase screen brightness
 bindsym XF86MonBrightnessDown exec sh ~/Sync/script/brightness-incr.sh -50 # decrease screen brightness
 
+exec redshift-gtk
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
